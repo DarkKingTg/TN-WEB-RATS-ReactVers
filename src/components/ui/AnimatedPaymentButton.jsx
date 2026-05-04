@@ -73,7 +73,7 @@ export default function AnimatedPaymentButton({
       disabled={isDisabled}
       aria-busy={processing}
       data-processing={processing}
-      className={`tn-pay-btn relative isolate inline-flex min-h-[68px] items-center justify-center overflow-hidden rounded-[1.55rem] border border-white/12 bg-[#0e151a]/96 px-6 py-4 text-white shadow-[0_18px_44px_rgba(0,0,0,0.28)] transition-[border-color,transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-cyan-primary/35 hover:shadow-[0_24px_52px_rgba(103,248,29,0.14)] disabled:cursor-not-allowed disabled:opacity-65 ${className}`}
+      className={`tn-pay-btn relative isolate inline-flex min-h-[68px] items-center justify-center overflow-hidden rounded-[1.55rem] border border-white/12 bg-[#0e151a]/96 px-6 py-4 text-white shadow-[0_18px_44px_rgba(0,0,0,0.28)] transition-[border-color,transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-cyan-primary/35 hover:shadow-[0_24px_52px_rgba(155,255,87,0.14)] disabled:cursor-not-allowed disabled:opacity-65 ${className}`}
     >
       {/* Processing fill bar */}
       <div

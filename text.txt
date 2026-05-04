@@ -1,0 +1,27 @@
+color palette:
+
+Dominant	        #0B120C
+Secondary	        #2F5E22
+Accent	            #9BFF57
+Font Color	        #F4FFF1
+
+
+
+Default	            #1B241A
+Hover	            #2F5E22
+Active	            #396927
+
+
+
+home page will be changed
+
+about page will be changed
+
+we build, we design, we deliver.
+
+
+             Crafted by two dedicated builders,
+             we transform ideas into refined digital
+             experiences — from high-performing websites
+             to polished presentations and visual assets,
+             all delivered with precision and speed.

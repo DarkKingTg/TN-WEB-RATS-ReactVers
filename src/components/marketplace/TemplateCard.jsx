@@ -9,7 +9,7 @@ export default function TemplateCard({ template }) {
   const image = template.images?.[0] || "/Images/Project_Preview/Project_Preview_1.png";
 
   return (
-    <article className="group overflow-hidden rounded-[2rem] border border-white/8 bg-[#121417] shadow-[0_30px_60px_rgba(0,0,0,0.25)] transition hover:-translate-y-1 hover:border-cyan-primary/20">
+    <article className="group overflow-hidden rounded-[2rem] border border-white/8 bg-[#1B241A] shadow-[0_30px_60px_rgba(0,0,0,0.25)] transition hover:-translate-y-1 hover:border-cyan-primary/20">
       <Link to={`/template/${template.id}`} className="block">
         <div className="relative aspect-[16/10] overflow-hidden bg-black/40">
           <img
@@ -20,7 +20,7 @@ export default function TemplateCard({ template }) {
             height="200"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0D0F0D] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B120C] via-transparent to-transparent" />
           <div className="absolute left-4 top-4 flex items-center gap-2">
             <span className="rounded-full border border-white/10 bg-black/45 px-3 py-1 text-[10px] font-mono uppercase tracking-[0.18em] text-white/65">
               {template.category || "template"}

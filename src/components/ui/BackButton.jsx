@@ -12,7 +12,7 @@ export default function BackButton({
   ...props
 }) {
   const baseClassName = [
-    "group relative inline-flex h-14 items-center overflow-hidden rounded-[1.35rem] border border-white/10 bg-[#0d1418]/92 px-1 text-white shadow-[0_18px_40px_rgba(0,0,0,0.28)] transition-[border-color,box-shadow,transform] duration-300 hover:border-cyan-primary/26 hover:shadow-[0_22px_50px_rgba(103,248,29,0.16)]",
+    "group relative inline-flex h-14 items-center overflow-hidden rounded-[1.35rem] border border-white/10 bg-[#0d1418]/92 px-1 text-white shadow-[0_18px_40px_rgba(0,0,0,0.28)] transition-[border-color,box-shadow,transform] duration-300 hover:border-cyan-primary/26 hover:shadow-[0_22px_50px_rgba(155,255,87,0.16)]",
     compact ? "w-12 hover:w-[152px] focus-visible:w-[152px] active:w-[152px]" : "min-w-[188px]",
     className,
   ]

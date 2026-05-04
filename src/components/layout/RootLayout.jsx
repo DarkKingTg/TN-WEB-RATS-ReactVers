@@ -33,7 +33,7 @@ const VerificationBanner = () => {
 
   return (
     <div
-      className="bg-amber-500/10 border-b border-amber-500/20 relative z-50"
+      className="bg-accent/10 border-b border-amber-500/20 relative z-50"
     >
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-4">
         <div className="flex items-center gap-2 text-amber-300 text-xs font-mono">

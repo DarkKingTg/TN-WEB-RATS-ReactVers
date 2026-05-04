@@ -704,7 +704,7 @@ const BookService = () => {
                       onClick={() => handlePlanSelect(plan.id)}
                       className={`rounded-[2rem] border p-8 text-left transition-all duration-300 ${
                         isSelected
-                          ? "border-cyan-primary bg-cyan-primary/10 shadow-[0_0_30px_rgba(103,248,29,0.15)]"
+                          ? "border-cyan-primary bg-cyan-primary/10 shadow-[0_0_30px_rgba(155,255,87,0.15)]"
                           : "border-white/8 bg-black/65 hover:border-cyan-primary/18 hover:bg-black/80"
                       }`}
                     >
@@ -806,7 +806,7 @@ const BookService = () => {
                     Next <ArrowRight size={16} />
                   </Button>
                   {stepErrors.step3 && (
-                    <div className="mt-3 flex items-center gap-2 rounded-xl border border-amber-500/20 bg-amber-500/10 px-4 py-3 text-sm text-amber-300">
+                    <div className="mt-3 flex items-center gap-2 rounded-xl border border-amber-500/20 bg-accent/10 px-4 py-3 text-sm text-amber-300">
                       <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                       </svg>
@@ -1044,7 +1044,7 @@ const BookService = () => {
                       }`}
                     />
                     {fieldErrors.projectDescription && (
-                      <p className="mt-2 text-[10px] font-mono text-amber-400/80 uppercase tracking-wider pl-12 flex items-center gap-2">
+                      <p className="mt-2 text-[10px] font-mono text-accent/80 uppercase tracking-wider pl-12 flex items-center gap-2">
                         <Info size={10} /> {fieldErrors.projectDescription}
                       </p>
                     )}
@@ -1070,7 +1070,7 @@ const BookService = () => {
                       }`}
                     />
                     {fieldErrors.features && (
-                      <p className="mt-2 text-[10px] font-mono text-amber-400/80 uppercase tracking-wider pl-12 flex items-center gap-2">
+                      <p className="mt-2 text-[10px] font-mono text-accent/80 uppercase tracking-wider pl-12 flex items-center gap-2">
                         <Info size={10} /> {fieldErrors.features}
                       </p>
                     )}
@@ -1096,7 +1096,7 @@ const BookService = () => {
                       }`}
                     />
                     {fieldErrors.references && (
-                      <p className="mt-2 text-[10px] font-mono text-amber-400/80 uppercase tracking-wider pl-12 flex items-center gap-2">
+                      <p className="mt-2 text-[10px] font-mono text-accent/80 uppercase tracking-wider pl-12 flex items-center gap-2">
                         <Info size={10} /> {fieldErrors.references}
                       </p>
                     )}
@@ -1211,7 +1211,7 @@ const BookService = () => {
               </Button>
             </div>
             {stepErrors.step4 && (
-              <div className="flex items-center gap-2 rounded-xl border border-amber-500/20 bg-amber-500/10 px-4 py-3 text-sm text-amber-300">
+              <div className="flex items-center gap-2 rounded-xl border border-amber-500/20 bg-accent/10 px-4 py-3 text-sm text-amber-300">
                 <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>

@@ -99,7 +99,7 @@ const UsersView = () => {
   const getRoleColor = (role) => {
     switch(role) {
       case 'owner': return 'text-red-400 bg-red-500/10 border-red-500/20';
-      case 'admin': return 'text-blue-500 bg-blue-500/10 border-blue-500/20';
+      case 'admin': return 'text-secondary-dark bg-secondary-dark/10 border-blue-500/20';
       case 'worker': return 'text-cyan-primary bg-cyan-primary/10 border-cyan-primary/20';
       case 'client': return 'text-white/40 bg-white/5 border-white/10';
       default: return 'text-white/40 bg-white/5 border-white/10';
@@ -135,13 +135,13 @@ const UsersView = () => {
               <input 
                 type="text" 
                 placeholder="Name or email..." 
-                className="bg-[#121417] border border-white/5 hover:border-white/10 focus:border-cyan-primary outline-none px-10 py-2.5 rounded-xl text-xs w-64 transition-all"
+                className="bg-[#1B241A] border border-white/5 hover:border-white/10 focus:border-cyan-primary outline-none px-10 py-2.5 rounded-xl text-xs w-64 transition-all"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
            </div>
            <select 
-             className="bg-[#121417] border border-white/5 px-4 py-2.5 rounded-xl text-[10px] font-mono uppercase tracking-widest outline-none focus:border-cyan-primary"
+             className="bg-[#1B241A] border border-white/5 px-4 py-2.5 rounded-xl text-[10px] font-mono uppercase tracking-widest outline-none focus:border-cyan-primary"
              value={roleFilter}
              onChange={(e) => setRoleFilter(e.target.value)}
            >
@@ -154,7 +154,7 @@ const UsersView = () => {
         </div>
       </div>
 
-      <div className="bg-[#121417] border border-white/5 rounded-3xl overflow-hidden shadow-2xl">
+      <div className="bg-[#1B241A] border border-white/5 rounded-3xl overflow-hidden shadow-2xl">
         <div className="overflow-x-auto">
           <table className="w-full text-left">
             <thead className="bg-white/2 border-b border-white/5 text-[10px] font-mono uppercase tracking-widest text-white/30">
@@ -215,7 +215,7 @@ const UsersView = () => {
                          return (
                            <select
                              disabled={!canManage}
-                             className="bg-[#262B25] border border-white/10 rounded-lg px-3 py-1.5 text-[9px] font-mono uppercase tracking-widest outline-none focus:border-cyan-primary cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed"
+                             className="bg-[#2F5E22] border border-white/10 rounded-lg px-3 py-1.5 text-[9px] font-mono uppercase tracking-widest outline-none focus:border-cyan-primary cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed"
                              value={u.role}
                              onChange={(e) => handlePromote(u.id, e.target.value)}
                            >

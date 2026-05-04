@@ -28,13 +28,13 @@ export default function PaymentSuccess() {
   }, [countdown, navigate]);
 
   return (
-    <div className="min-h-screen bg-[#0a0b0d] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-primary-dark flex items-center justify-center p-4">
       <div className="w-full max-w-lg">
         {/* Main Card */}
-        <div className="rounded-[30px] border border-white/10 bg-[#121417] p-8 shadow-2xl">
+        <div className="rounded-[30px] border border-white/10 bg-control-default p-8 shadow-2xl">
           {/* Success Icon */}
-          <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-green-500/20 to-emerald-500/10 border border-green-500/30">
-            <CheckCircle className="h-12 w-12 text-green-400" strokeWidth={1.5} />
+          <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-accent/20 to-secondary-dark/10 border border-accent/30">
+            <CheckCircle className="h-12 w-12 text-accent" strokeWidth={1.5} />
           </div>
 
           {/* Sparkles */}
@@ -70,8 +70,8 @@ export default function PaymentSuccess() {
               
               <div className="flex items-center justify-between text-sm">
                 <span className="text-white/40">Status</span>
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400 border border-green-500/20">
-                  <span className="h-1.5 w-1.5 rounded-full bg-green-400 animate-pulse" />
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent border border-accent/20">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
                   Confirmed
                 </span>
               </div>

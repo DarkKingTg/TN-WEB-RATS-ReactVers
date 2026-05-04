@@ -212,14 +212,14 @@ const OrdersView = () => {
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
               placeholder="Search orders..."
-              className="w-full rounded-xl border border-white/8 bg-[#121417] px-10 py-2.5 text-xs outline-none transition-colors hover:border-white/12 focus:border-cyan-primary sm:w-72"
+              className="w-full rounded-xl border border-white/8 bg-[#1B241A] px-10 py-2.5 text-xs outline-none transition-colors hover:border-white/12 focus:border-cyan-primary sm:w-72"
             />
           </div>
 
           <select
             value={statusFilter}
             onChange={(event) => setStatusFilter(event.target.value)}
-            className="rounded-xl border border-white/8 bg-[#121417] px-4 py-2.5 text-[10px] font-mono uppercase tracking-[0.18em] outline-none focus:border-cyan-primary"
+            className="rounded-xl border border-white/8 bg-[#1B241A] px-4 py-2.5 text-[10px] font-mono uppercase tracking-[0.18em] outline-none focus:border-cyan-primary"
           >
             <option value="">All Status</option>
             {statusOptions.map((status) => (
@@ -231,7 +231,7 @@ const OrdersView = () => {
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-[30px] border border-white/8 bg-[#121417] shadow-2xl">
+      <div className="overflow-hidden rounded-[30px] border border-white/8 bg-[#1B241A] shadow-2xl">
         <div className="overflow-x-auto">
           <table className="w-full text-left">
             <thead className="border-b border-white/8 bg-white/5 text-[10px] font-mono uppercase tracking-[0.18em] text-white/35">
@@ -404,7 +404,7 @@ const OrdersView = () => {
             className="absolute inset-0 bg-black/75 backdrop-blur"
           />
           <div
-            className="relative z-10 w-full max-w-xl rounded-[28px] border border-white/10 bg-[#121417] p-6 shadow-2xl"
+            className="relative z-10 w-full max-w-xl rounded-[28px] border border-white/10 bg-[#1B241A] p-6 shadow-2xl"
           >
               <button
                 type="button"

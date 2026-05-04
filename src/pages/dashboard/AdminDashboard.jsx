@@ -90,9 +90,9 @@ const OverviewTab = () => {
         setRecentOrders(orders.slice(0, 6));
         setStats([
           { label: 'Total Orders', value: String(orders.length), icon: Inbox, color: 'text-cyan-primary' },
-          { label: 'Active Orders', value: String(activeOrders.length), icon: Clock, color: 'text-yellow-500' },
-          { label: 'Booked Value', value: `₹${bookedValue.toLocaleString('en-IN')}`, icon: DollarSign, color: 'text-green-500' },
-          { label: 'Staff Count', value: String(staffCount), icon: Users, color: 'text-purple-500' },
+          { label: 'Active Orders', value: String(activeOrders.length), icon: Clock, color: 'text-secondary-dark' },
+          { label: 'Booked Value', value: `₹${bookedValue.toLocaleString('en-IN')}`, icon: DollarSign, color: 'text-accent' },
+          { label: 'Staff Count', value: String(staffCount), icon: Users, color: 'text-light-gray' },
         ]);
       } catch (error) {
         console.error(error);
@@ -120,10 +120,10 @@ const OverviewTab = () => {
         </div>
 
         <div className="flex gap-3">
-          <button className="flex items-center gap-2 rounded-xl border border-white/10 bg-[#1a1f1a] px-6 py-3 text-[10px] font-mono uppercase tracking-widest transition-colors hover:bg-[#262B25]">
+          <button className="flex items-center gap-2 rounded-xl border border-white/10 bg-control-default px-6 py-3 text-[10px] font-mono uppercase tracking-widest transition-colors hover:bg-control-hover">
             <Calendar size={14} /> Live Range
           </button>
-          <button className="rounded-xl border border-cyan-primary/20 bg-[#0f1f15] px-6 py-3 text-[10px] font-mono uppercase tracking-widest text-cyan-primary transition-colors hover:bg-[#0f2f1a]">
+          <button className="rounded-xl border border-cyan-primary/20 bg-secondary-dark/10 px-6 py-3 text-[10px] font-mono uppercase tracking-widest text-cyan-primary transition-colors hover:bg-secondary-dark/30">
             Export Snapshot
           </button>
         </div>
@@ -143,10 +143,10 @@ const OverviewTab = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.08 }}
-              className="relative overflow-hidden rounded-[2rem] border border-white/8 bg-[#121417] p-8 shadow-2xl"
+              className="relative overflow-hidden rounded-[2rem] border border-white/8 bg-control-default p-8 shadow-2xl"
             >
               <div className="mb-6 flex items-start justify-between gap-4">
-                <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-[#1a1f1a] ${stat.color}`}>
+                <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-control-default ${stat.color}`}>
                   <Icon size={22} />
                 </div>
                 <div className="flex items-center gap-1 text-[9px] font-mono font-black text-green-400">
@@ -163,8 +163,8 @@ const OverviewTab = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-8 pb-20 lg:grid-cols-3">
-        <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-[#121417] shadow-2xl lg:col-span-2">
-          <div className="flex items-center justify-between border-b border-white/8 bg-[#0d0f0d] p-8">
+        <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-control-default shadow-2xl lg:col-span-2">
+          <div className="flex items-center justify-between border-b border-white/8 bg-primary-dark p-8">
             <h3 className="flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-cyan-primary">
               <Box size={16} /> Latest Orders
             </h3>
@@ -173,7 +173,7 @@ const OverviewTab = () => {
           <div className="overflow-x-auto">
             <table className="w-full text-left">
               <thead>
-                <tr className="border-b border-white/8 bg-[#262B25] text-[9px] font-mono uppercase tracking-widest text-white/20">
+                <tr className="border-b border-white/8 bg-control-hover text-[9px] font-mono uppercase tracking-widest text-white/20">
                   <th className="px-8 py-5">Order</th>
                   <th className="px-8 py-5">Service</th>
                   <th className="px-8 py-5">Priority / Deadline</th>
@@ -187,7 +187,7 @@ const OverviewTab = () => {
                     .fill(0)
                     .map((_, index) => (
                       <tr key={index} className="animate-pulse">
-                        <td colSpan="5" className="h-12 bg-[#1a1f1a] px-8 py-6" />
+                        <td colSpan="5" className="h-12 bg-control-default px-8 py-6" />
                       </tr>
                     ))
                 ) : recentOrders.length === 0 ? (
@@ -201,7 +201,7 @@ const OverviewTab = () => {
                   </tr>
                 ) : (
                   recentOrders.map((order) => (
-                    <tr key={order.id} className="hover:bg-[#1a1f1a]">
+                    <tr key={order.id} className="hover:bg-control-default">
                       <td className="px-8 py-6 font-mono text-[11px] text-cyan-primary/50">
                         #{order.id.slice(-8).toUpperCase()}
                       </td>
@@ -248,7 +248,7 @@ const OverviewTab = () => {
         </div>
 
         <div className="space-y-8">
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-white/8 bg-[#121417] p-8 shadow-2xl">
+          <div className="relative overflow-hidden rounded-[2.5rem] border border-white/8 bg-control-default p-8 shadow-2xl">
             <h3 className="mb-8 flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-cyan-primary">
               <Bell size={16} /> Operations Notes
             </h3>
@@ -271,7 +271,7 @@ const OverviewTab = () => {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-gradient-to-br from-[#121417] to-[#262B25] p-10 shadow-2xl">
+          <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-gradient-to-br from-control-default to-control-hover p-10 shadow-2xl">
             <h4 className="text-lg font-black text-white italic">
               Booking Flow <span className="text-cyan-primary">Synced</span>
             </h4>

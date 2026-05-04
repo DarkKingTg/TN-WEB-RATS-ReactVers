@@ -346,7 +346,7 @@ const PortfolioPreviewModal = ({
                     onClick={() => onSelect(index)}
                     className={`overflow-hidden rounded-[18px] border transition-all ${
                       activeIndex === index
-                        ? "border-cyan-primary shadow-[0_0_0_1px_rgba(103,248,29,0.3)]"
+                        ? "border-cyan-primary shadow-[0_0_0_1px_rgba(155,255,87,0.3)]"
                         : "border-white/8 hover:border-white/14"
                     }`}
                     aria-label={`Preview ${item.title}`}

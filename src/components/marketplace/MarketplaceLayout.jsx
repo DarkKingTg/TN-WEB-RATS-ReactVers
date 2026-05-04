@@ -44,12 +44,12 @@ export default function MarketplaceLayout({ children, filters, setFilters }) {
   };
 
   return (
-    <section className="min-h-screen bg-[#0D0F0D] text-white">
+    <section className="min-h-screen bg-[#0B120C] text-white">
       {!isDesktopViewport && !isSidebarOpen && (
         <button
           type="button"
           onClick={openSidebar}
-          className="fixed left-4 top-28 z-40 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#121417]/92 px-4 py-3 text-xs font-semibold text-white shadow-[0_24px_50px_rgba(0,0,0,0.32)] backdrop-blur transition hover:border-cyan-primary/30 hover:text-cyan-primary md:left-6"
+          className="fixed left-4 top-28 z-40 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#1B241A]/92 px-4 py-3 text-xs font-semibold text-white shadow-[0_24px_50px_rgba(0,0,0,0.32)] backdrop-blur transition hover:border-cyan-primary/30 hover:text-cyan-primary md:left-6"
           aria-label="Open template filters"
         >
           <SlidersHorizontal size={16} />
@@ -68,9 +68,9 @@ export default function MarketplaceLayout({ children, filters, setFilters }) {
 
       <div className="mx-auto grid min-h-screen max-w-7xl gap-8 px-6 py-10 lg:grid-cols-[280px_minmax(0,1fr)] lg:px-10">
         <aside
-          className={`fixed bottom-4 left-0 top-24 z-50 w-[min(320px,84vw)] overflow-y-auto rounded-r-[2rem] border-r border-white/8 bg-[#121417]/95 p-5 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur transition-transform duration-300 ease-out ${
+          className={`fixed bottom-4 left-0 top-24 z-50 w-[min(320px,84vw)] overflow-y-auto rounded-r-[2rem] border-r border-white/8 bg-[#1B241A]/95 p-5 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur transition-transform duration-300 ease-out ${
             isSidebarOpen ? "translate-x-0" : "-translate-x-[105%]"
-          } lg:sticky lg:top-28 lg:z-auto lg:h-fit lg:w-auto lg:translate-x-0 lg:rounded-[2rem] lg:border lg:border-white/8 lg:border-r lg:bg-[#121417]/90`}
+          } lg:sticky lg:top-28 lg:z-auto lg:h-fit lg:w-auto lg:translate-x-0 lg:rounded-[2rem] lg:border lg:border-white/8 lg:border-r lg:bg-[#1B241A]/90`}
         >
           <div className="mb-5 flex items-start justify-between gap-4 border-b border-white/6 pb-4">
             <div>

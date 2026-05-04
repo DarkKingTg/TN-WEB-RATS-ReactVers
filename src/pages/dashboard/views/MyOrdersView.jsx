@@ -150,7 +150,7 @@ const MyOrdersView = () => {
               <div
                 key={order.id}
                 onClick={() => setSelectedOrder(order)}
-                className="rounded-[30px] border border-white/8 bg-[#121417] p-7 shadow-2xl cursor-pointer group hover:border-cyan-primary/20 transition-all"
+                className="rounded-[30px] border border-white/8 bg-[#1B241A] p-7 shadow-2xl cursor-pointer group hover:border-cyan-primary/20 transition-all"
               >
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <div>
@@ -255,7 +255,7 @@ const MyOrdersView = () => {
         )}
       </div>
 
-      <div className="flex items-start gap-4 rounded-[28px] border border-white/8 bg-[#121417]/70 p-6">
+      <div className="flex items-start gap-4 rounded-[28px] border border-white/8 bg-[#1B241A]/70 p-6">
         <AlertCircle size={20} className="mt-0.5 shrink-0 text-cyan-primary" />
         <p className="text-[10px] font-mono uppercase tracking-[0.16em] leading-relaxed text-white/28">
           Priority orders should be accepted first. Keep the order status moving

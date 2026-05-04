@@ -42,7 +42,7 @@ const PIPELINE_ORDER = [
   { key: 'completed', label: 'Completed' },
 ];
 
-const COLORS = ['#67F81D', '#62CB2C', '#000000', '#FFFFFF', '#1CC8FF', '#F6B73C'];
+const COLORS = ['#9BFF57', '#2F5E22', '#1B241A', '#F4FFF1', '#396927', '#0B120C'];
 
 const AnalyticsView = () => {
   const [data, setData] = useState({
@@ -207,7 +207,7 @@ const AnalyticsView = () => {
             value: formatCurrency(data.stats.totalRevenue),
             icon: <DollarSign />,
             meta: `${data.stats.paidOrders} orders with payment logged`,
-            color: 'text-green-500',
+            color: 'text-accent',
           },
           {
             label: 'Booking Volume',
@@ -221,19 +221,19 @@ const AnalyticsView = () => {
             value: data.stats.registeredUsers,
             icon: <Users />,
             meta: `${data.stats.clientCount} clients / ${data.stats.staffCount} staff`,
-            color: 'text-purple-500',
+            color: 'text-secondary-dark',
           },
           {
             label: 'Fulfillment Rate',
             value: `${data.stats.completionRate}%`,
             icon: <CheckCircle />,
             meta: `${data.stats.completedOrders} completed orders`,
-            color: 'text-blue-500',
+            color: 'text-secondary-dark',
           },
         ].map((stat, index) => (
           <div
             key={stat.label}
-            className="bg-[#121417] border border-white/5 p-8 rounded-[2rem] shadow-2xl"
+            className="bg-[#1B241A] border border-white/5 p-8 rounded-[2rem] shadow-2xl"
           >
             <div className="flex justify-between items-start mb-6 gap-4">
               <div
@@ -254,7 +254,7 @@ const AnalyticsView = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="bg-[#121417] border border-white/5 p-8 rounded-[2.5rem] shadow-2xl h-[400px] min-h-[300px]">
+        <div className="bg-[#1B241A] border border-white/5 p-8 rounded-[2.5rem] shadow-2xl h-[400px] min-h-[300px]">
           <h3 className="text-xs font-mono uppercase tracking-widest text-cyan-primary mb-8 flex items-center gap-3">
             <TrendingUp size={16} /> Revenue Intake
           </h3>
@@ -267,8 +267,8 @@ const AnalyticsView = () => {
               <AreaChart data={data.revenue}>
                 <defs>
                   <linearGradient id="colorRev" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#67F81D" stopOpacity={0.3} />
-                    <stop offset="95%" stopColor="#67F81D" stopOpacity={0} />
+                    <stop offset="5%" stopColor="#9BFF57" stopOpacity={0.3} />
+                    <stop offset="95%" stopColor="#9BFF57" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid
@@ -292,16 +292,16 @@ const AnalyticsView = () => {
                 <Tooltip
                   formatter={(value) => [formatCurrency(value), 'Collected']}
                   contentStyle={{
-                    backgroundColor: '#262B25',
-                    border: '1px solid rgba(103, 248, 29,0.2)',
+                    backgroundColor: '#2F5E22',
+                    border: '1px solid rgba(155, 255, 87,0.2)',
                     borderRadius: '12px',
                   }}
-                  itemStyle={{ color: '#67F81D', fontSize: '12px' }}
+                  itemStyle={{ color: '#9BFF57', fontSize: '12px' }}
                 />
                 <Area
                   type="monotone"
                   dataKey="amount"
-                  stroke="#67F81D"
+                  stroke="#9BFF57"
                   fillOpacity={1}
                   fill="url(#colorRev)"
                   strokeWidth={3}
@@ -311,7 +311,7 @@ const AnalyticsView = () => {
           )}
         </div>
 
-        <div className="bg-[#121417] border border-white/5 p-8 rounded-[2.5rem] shadow-2xl h-[400px] min-h-[300px]">
+        <div className="bg-[#1B241A] border border-white/5 p-8 rounded-[2.5rem] shadow-2xl h-[400px] min-h-[300px]">
           <h3 className="text-xs font-mono uppercase tracking-widest text-cyan-primary mb-8 flex items-center gap-3">
             <Activity size={16} /> Service Dominance
           </h3>
@@ -338,8 +338,8 @@ const AnalyticsView = () => {
                 <Tooltip
                   formatter={(value, name) => [value, name]}
                   contentStyle={{
-                    backgroundColor: '#262B25',
-                    border: '1px solid rgba(103, 248, 29,0.2)',
+                    backgroundColor: '#2F5E22',
+                    border: '1px solid rgba(155, 255, 87,0.2)',
                     borderRadius: '12px',
                   }}
                 />
@@ -349,7 +349,7 @@ const AnalyticsView = () => {
           )}
         </div>
 
-        <div className="lg:col-span-2 bg-[#121417] border border-white/5 p-8 rounded-[2.5rem] shadow-2xl h-[400px] min-h-[300px]">
+        <div className="lg:col-span-2 bg-[#1B241A] border border-white/5 p-8 rounded-[2.5rem] shadow-2xl h-[400px] min-h-[300px]">
           <h3 className="text-xs font-mono uppercase tracking-widest text-cyan-primary mb-8 flex items-center gap-3">
             <Package size={16} /> Order Pipeline
           </h3>
@@ -377,12 +377,12 @@ const AnalyticsView = () => {
                 cursor={{ fill: 'rgba(255,255,255,0.02)' }}
                 formatter={(value) => [value, 'Orders']}
                 contentStyle={{
-                  backgroundColor: '#262B25',
-                  border: '1px solid rgba(103, 248, 29,0.2)',
+                  backgroundColor: '#2F5E22',
+                  border: '1px solid rgba(155, 255, 87,0.2)',
                   borderRadius: '12px',
                 }}
               />
-              <Bar dataKey="value" fill="#67F81D" radius={[10, 10, 0, 0]} barSize={40} />
+              <Bar dataKey="value" fill="#9BFF57" radius={[10, 10, 0, 0]} barSize={40} />
             </BarChart>
           </ResponsiveContainer>
         </div>

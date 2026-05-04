@@ -90,7 +90,7 @@ const DashboardLayout = ({ children }) => {
   };
 
   return (
-    <div className="min-h-screen text-light-gray flex bg-[#121417] overflow-hidden font-rajdhani relative">
+    <div className="min-h-screen text-light-gray flex bg-control-default overflow-hidden font-rajdhani relative">
       {/* Sidebar Overlay */}
       <AnimatePresence>
         {isSidebarOpen && window.innerWidth < 1024 && (
@@ -106,10 +106,10 @@ const DashboardLayout = ({ children }) => {
 
       {/* Sidebar */}
       <aside 
-        className={`fixed inset-y-0 left-0 z-50 w-72 shrink-0 bg-[#121417] border-r border-white/5 transform transition-transform duration-300 ease-in-out flex flex-col ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0`}
+        className={`fixed inset-y-0 left-0 z-50 w-72 shrink-0 bg-control-default border-r border-white/8 transform transition-transform duration-300 ease-in-out flex flex-col ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0`}
       >
         {/* Brand */}
-        <div className="p-6 border-b border-white/5 flex items-center justify-between">
+        <div className="p-6 border-b border-white/8 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <img src="/Images/Icons/logo.jpg" alt="Rynix" className="w-8 h-8 rounded-full object-cover" />
             <div>
@@ -146,7 +146,7 @@ const DashboardLayout = ({ children }) => {
                 }}
                 className={`w-full flex items-center gap-4 rounded-2xl border px-4 py-3 text-left transition-all group ${
                   currentView === item.id 
-                    ? 'border-cyan-primary/20 bg-cyan-primary/10 text-cyan-primary shadow-[0_0_20px_rgba(103,248,29,0.08)]' 
+                    ? 'border-cyan-primary/20 bg-cyan-primary/10 text-cyan-primary shadow-[0_0_20px_rgba(var(--rgb-accent),0.08)]' 
                     : 'border-transparent text-white/40 hover:border-white/8 hover:text-white/80 hover:bg-white/5'
                 }`}
               >
@@ -155,7 +155,7 @@ const DashboardLayout = ({ children }) => {
                 </span>
                 <span className="text-sm font-semibold tracking-wide capitalize">{item.label}</span>
                 {currentView === item.id && (
-                   <motion.div layoutId="navIndicator" className="ml-auto w-1.5 h-1.5 rounded-full bg-cyan-primary shadow-[0_0_10px_rgba(103, 248, 29,1)]" />
+                   <motion.div layoutId="navIndicator" className="ml-auto w-1.5 h-1.5 rounded-full bg-cyan-primary shadow-[0_0_10px_rgba(var(--rgb-accent),1)]" />
                 )}
               </button>
             ))}
@@ -163,7 +163,7 @@ const DashboardLayout = ({ children }) => {
         </nav>
 
         {/* User Card */}
-        <div className="p-6 border-t border-white/5 bg-black/20">
+        <div className="p-6 border-t border-white/8 bg-black/20">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 rounded-xl bg-cyan-primary/10 flex items-center justify-center text-cyan-primary font-bold border border-cyan-primary/20">
               {userProfile?.name?.charAt(0) || 'U'}
@@ -188,7 +188,7 @@ const DashboardLayout = ({ children }) => {
       {/* Main Content */}
       <div className="grow flex flex-col min-w-0">
         {/* Header */}
-        <header className="h-20 bg-[#121417]/80 backdrop-blur-md border-b border-white/5 flex items-center justify-between px-6 lg:px-10 sticky top-0 z-30">
+        <header className="h-20 bg-control-default/80 backdrop-blur-md border-b border-white/5 flex items-center justify-between px-6 lg:px-10 sticky top-0 z-30">
           <div className="flex items-center gap-6">
             <button 
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -232,7 +232,7 @@ const DashboardLayout = ({ children }) => {
         </header>
 
         {/* View Port */}
-        <main className="grow overflow-y-auto px-6 py-8 lg:px-10 bg-[#0D0F0D] no-scrollbar relative z-10">
+        <main className="grow overflow-y-auto px-6 py-8 lg:px-10 bg-primary-dark no-scrollbar relative z-10">
           <ErrorBoundary variant="module" key={currentView}>
             {children({ currentView })}
           </ErrorBoundary>

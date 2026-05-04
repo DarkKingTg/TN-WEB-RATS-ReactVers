@@ -148,7 +148,7 @@ const OrderPoolView = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-3 rounded-2xl border border-white/8 bg-[#121417] px-4 py-3">
+        <div className="flex items-center gap-3 rounded-2xl border border-white/8 bg-[#1B241A] px-4 py-3">
           <Filter size={14} className="text-white/35" />
           <select
             value={filter}
@@ -180,7 +180,7 @@ const OrderPoolView = () => {
           <span className="ml-3 text-sm text-white/35">Loading order pool...</span>
         </div>
       ) : filteredOrders.length === 0 ? (
-        <div className="rounded-[2rem] border border-white/8 bg-[#121417] px-8 py-20 text-center">
+        <div className="rounded-[2rem] border border-white/8 bg-[#1B241A] px-8 py-20 text-center">
           <Package size={48} className="mx-auto mb-5 text-white/15" />
           <div className="text-xl font-black text-white/55">No claimable orders right now</div>
           <p className="mt-3 text-[10px] font-mono uppercase tracking-[0.18em] text-white/20">
@@ -196,7 +196,7 @@ const OrderPoolView = () => {
             return (
               <div
                 key={order.id}
-                className="rounded-[30px] border border-white/8 bg-[#121417] p-7 shadow-2xl cursor-pointer hover:border-white/20 transition-colors"
+                className="rounded-[30px] border border-white/8 bg-[#1B241A] p-7 shadow-2xl cursor-pointer hover:border-white/20 transition-colors"
                 onClick={() => setSelectedOrder(order)}
               >
                 <div className="flex flex-wrap items-start justify-between gap-4">
@@ -295,7 +295,7 @@ const OrderPoolView = () => {
       {/* Assignment Confirmation Modal */}
       {showAssignModal && orderForAssignment && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
-          <div className="w-full max-w-md rounded-[30px] border border-white/8 bg-[#121417] p-8 shadow-2xl">
+          <div className="w-full max-w-md rounded-[30px] border border-white/8 bg-[#1B241A] p-8 shadow-2xl">
             <h2 className="text-xl font-black text-white mb-4">
               Claim Order
             </h2>

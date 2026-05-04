@@ -594,7 +594,7 @@ const Profile = () => {
               className={`mb-6 rounded-xl border px-4 py-3 text-sm ${
                 status.type === "success"
                   ? "border-cyan-primary/20 bg-cyan-primary/10 text-cyan-primary"
-                  : "border-amber-500/20 bg-amber-500/10 text-amber-200"
+                  : "border-amber-500/20 bg-accent/10 text-amber-200"
               }`}
             >
               {status.message || fetchError}

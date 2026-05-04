@@ -76,7 +76,7 @@ const WorkerOverview = () => {
 
   const statCards = [
     { label: "Active Orders", value: stats.activeOrders, icon: Briefcase, color: "text-cyan-primary" },
-    { label: "Completed", value: stats.completedOrders, icon: CheckCircle, color: "text-green-500" },
+    { label: "Completed", value: stats.completedOrders, icon: CheckCircle, color: "text-accent" },
   ];
 
   return (
@@ -104,7 +104,7 @@ const WorkerOverview = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.08 }}
-              className="relative overflow-hidden rounded-[2rem] border border-white/8 bg-[#121417] p-8 shadow-2xl"
+              className="relative overflow-hidden rounded-[2rem] border border-white/8 bg-control-default p-8 shadow-2xl"
             >
               <div className="mb-6 flex items-start justify-between gap-4">
                 <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-white/5 ${stat.color}`}>
@@ -123,7 +123,7 @@ const WorkerOverview = () => {
 
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
 
-        <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-[#121417] p-8 shadow-2xl">
+        <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-control-default p-8 shadow-2xl">
           <h3 className="mb-6 flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-cyan-primary">
             <AlertCircle size={16} /> Worker Guidelines
           </h3>

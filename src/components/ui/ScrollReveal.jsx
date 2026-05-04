@@ -107,7 +107,7 @@ export const StaggerItem = ({ children, direction = 'up', className = '' }) => {
 export const GradientText = ({ children, className = '', animate = true }) => {
   return (
     <motion.span
-      className={`bg-gradient-to-r from-[#9BFF57] via-[#00d9ff] to-[#9BFF57] bg-clip-text text-transparent bg-[length:200%_auto] ${className}`}
+      className={`bg-gradient-to-r from-[#9BFF57] via-[#2F5E22] to-[#9BFF57] bg-clip-text text-transparent bg-[length:200%_auto] ${className}`}
       animate={animate ? { backgroundPosition: ['0% center', '200% center'] } : {}}
       transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
       style={{ backgroundSize: '200% auto' }}
@@ -121,14 +121,16 @@ export const GradientText = ({ children, className = '', animate = true }) => {
 export const GlowText = ({ children, className = '', color = 'primary' }) => {
   const colors = {
     primary: 'text-[#9BFF57] drop-shadow-[0_0_10px_rgba(155,255,87,0.8)]',
-    cyan: 'text-[#00d9ff] drop-shadow-[0_0_10px_rgba(0,217,255,0.8)]',
-    purple: 'text-purple-400 drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]',
-    green: 'text-[#9BFF57] drop-shadow-[0_0_10px_rgba(155,255,87,0.8)]',
-    pink: 'text-pink-400 drop-shadow-[0_0_10px_rgba(236,72,153,0.8)]'
+    secondary: 'text-[#2F5E22] drop-shadow-[0_0_10px_rgba(47,94,34,0.8)]',
+    accent: 'text-[#9BFF57] drop-shadow-[0_0_10px_rgba(155,255,87,0.8)]',
+    font: 'text-[#F4FFF1] drop-shadow-[0_0_10px_rgba(244,255,241,0.5)]',
   };
   
+  // Fallback for legacy color names
+  const safeColor = colors[color] ? color : 'primary';
+  
   return (
-    <span className={`${colors[color]} ${className}`}>
+    <span className={`${colors[safeColor]} ${className}`}>
       {children}
     </span>
   );

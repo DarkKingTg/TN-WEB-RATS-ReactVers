@@ -2,13 +2,22 @@
   --color-primary-dark:   #0B120C;
   --color-secondary-dark: #2F5E22;
   --color-light-gray:     #F4FFF1;
+  --color-accent:         #9BFF57;
   --color-cyan-primary:   #9BFF57;
   --color-teal-primary:   #9BFF57;
 
+  /* Control States */
+  --color-control-default: #1B241A;
+  --color-control-hover:   #2F5E22;
+  --color-control-active:  #396927;
+
   /* RGB equivalents for transparency use */
-  --rgb-primary-dark:   11, 18, 12;
-  --rgb-secondary-dark: 47, 94, 34;
-  --rgb-light-gray:     244, 255, 241;
-  --rgb-cyan-primary:   155, 255, 87;
-  --rgb-teal-primary:   155, 255, 87;
+  --rgb-primary-dark:    11, 18, 12;
+  --rgb-secondary-dark:  47, 94, 34;
+  --rgb-light-gray:      244, 255, 241;
+  --rgb-accent:          155, 255, 87;
+  --rgb-cyan-primary:    155, 255, 87;
+  --rgb-teal-primary:    155, 255, 87;
+  --rgb-control-default: 27, 36, 26;
+  --rgb-control-active:  57, 105, 39;
 }

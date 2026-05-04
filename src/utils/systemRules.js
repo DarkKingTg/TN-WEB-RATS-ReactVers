@@ -47,22 +47,22 @@ export const ORDER_STATUS_META = {
   in_progress: {
     label: "In Progress",
     progress: 50,
-    badgeClass: "border-blue-500/20 bg-blue-500/10 text-blue-300",
+    badgeClass: "border-secondary-dark/20 bg-secondary-dark/10 text-secondary-dark",
   },
   review: {
     label: "Review",
     progress: 75,
-    badgeClass: "border-violet-500/20 bg-violet-500/10 text-violet-300",
+    badgeClass: "border-secondary-dark/20 bg-secondary-dark/10 text-secondary-dark",
   },
   complete: {
     label: "Complete",
     progress: 100,
-    badgeClass: "border-cyan-primary/20 bg-cyan-primary/10 text-cyan-primary",
+    badgeClass: "border-accent/20 bg-accent/10 text-accent",
   },
   cancelled: {
     label: "Cancelled",
     progress: 0,
-    badgeClass: "border-red-500/20 bg-red-500/10 text-red-400",
+    badgeClass: "border-white/10 bg-white/5 text-white/40",
   },
 };
 
@@ -90,19 +90,19 @@ export const ORDER_STATUS_ALIASES = {
 export const PAYMENT_STATUS_META = {
   pending: {
     label: "Pending",
-    badgeClass: "border-yellow-500/20 bg-yellow-500/10 text-yellow-400",
+    badgeClass: "border-secondary-dark/20 bg-secondary-dark/10 text-secondary-dark",
   },
   partial: {
     label: "Partial",
-    badgeClass: "border-cyan-primary/20 bg-cyan-primary/10 text-cyan-primary",
+    badgeClass: "border-accent/20 bg-accent/10 text-accent",
   },
   paid: {
     label: "Paid",
-    badgeClass: "border-green-500/20 bg-green-500/10 text-green-400",
+    badgeClass: "border-accent/20 bg-accent/10 text-accent",
   },
   failed: {
     label: "Failed",
-    badgeClass: "border-red-500/20 bg-red-500/10 text-red-400",
+    badgeClass: "border-control-active/20 bg-control-active/10 text-control-active",
   },
 };
 

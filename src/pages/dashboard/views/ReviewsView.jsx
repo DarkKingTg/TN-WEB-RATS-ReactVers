@@ -66,7 +66,7 @@ const ReviewsView = () => {
           { label: 'Avg Rating', val: stats.avg, icon: <Star />, color: 'text-yellow-500' },
           { label: '4-5 Star Ratings', val: stats.top, icon: <UserCheck />, color: 'text-green-500' },
         ].map((s, i) => (
-          <div key={i} className="bg-[#121417] border border-white/5 p-6 rounded-3xl flex items-center gap-6 group hover:border-cyan-primary/20 transition-all">
+          <div key={i} className="bg-[#1B241A] border border-white/5 p-6 rounded-3xl flex items-center gap-6 group hover:border-cyan-primary/20 transition-all">
              <div className={`w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center ${s.color} group-hover:scale-110 transition-transform`}>
                 {s.icon}
              </div>
@@ -78,7 +78,7 @@ const ReviewsView = () => {
         ))}
       </div>
 
-      <div className="bg-[#121417] border border-white/5 rounded-3xl overflow-hidden">
+      <div className="bg-[#1B241A] border border-white/5 rounded-3xl overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left">
             <thead className="bg-white/5 border-b border-white/5 text-[10px] font-mono uppercase tracking-widest text-white/30">

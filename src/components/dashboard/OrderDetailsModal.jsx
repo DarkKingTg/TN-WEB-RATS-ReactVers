@@ -137,7 +137,7 @@ const OrderDetailsModal = ({
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-xs text-white/40">Paid to date</span>
-                      <span className="text-sm font-black text-emerald-400">{formatCurrency(order.totalPaid || 0)}</span>
+                      <span className="text-sm font-black text-accent">{formatCurrency(order.totalPaid || 0)}</span>
                     </div>
                     <div className="pt-4 border-t border-white/5 flex justify-between items-center">
                       <span className="text-xs font-bold text-white/60">Balance Due</span>

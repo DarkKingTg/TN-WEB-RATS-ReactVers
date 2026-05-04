@@ -281,12 +281,12 @@ const TemplateCard = ({ template, onPreview, onGet }) => (
       {/* Badges */}
       <div className="absolute left-3 top-3 flex gap-2">
         {template.isFree && (
-          <span className="flex items-center gap-1 rounded-full border border-emerald-500/20 bg-emerald-500/15 px-2.5 py-1 text-[9px] font-mono font-bold uppercase tracking-wider text-emerald-400">
+          <span className="flex items-center gap-1 rounded-full border border-emerald-500/20 bg-accent/15 px-2.5 py-1 text-[9px] font-mono font-bold uppercase tracking-wider text-accent">
             <Gift size={10} /> Free
           </span>
         )}
         {template.isPro && (
-          <span className="flex items-center gap-1 rounded-full border border-amber-500/20 bg-amber-500/15 px-2.5 py-1 text-[9px] font-mono font-bold uppercase tracking-wider text-amber-300">
+          <span className="flex items-center gap-1 rounded-full border border-amber-500/20 bg-accent/15 px-2.5 py-1 text-[9px] font-mono font-bold uppercase tracking-wider text-amber-300">
             <Crown size={10} /> Pro
           </span>
         )}
@@ -322,7 +322,7 @@ const TemplateCard = ({ template, onPreview, onGet }) => (
       <div className="mt-4 flex items-center justify-between">
         <div
           className={`text-lg font-black ${
-            template.isFree ? "text-emerald-400" : "text-cyan-primary"
+            template.isFree ? "text-accent" : "text-cyan-primary"
           }`}
         >
           {formatTemplatePrice(template.price)}
@@ -449,12 +449,12 @@ const InteractivePreviewModal = ({ template, onClose, onGet }) => {
               Interactive Preview
             </div>
             {template.isFree && (
-              <span className="flex items-center gap-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2 py-0.5 text-[9px] font-mono text-emerald-400">
+              <span className="flex items-center gap-1 rounded-full border border-emerald-500/20 bg-accent/10 px-2 py-0.5 text-[9px] font-mono text-accent">
                 <Gift size={9} /> Free
               </span>
             )}
             {template.isPro && (
-              <span className="flex items-center gap-1 rounded-full border border-amber-500/20 bg-amber-500/10 px-2 py-0.5 text-[9px] font-mono text-amber-300">
+              <span className="flex items-center gap-1 rounded-full border border-amber-500/20 bg-accent/10 px-2 py-0.5 text-[9px] font-mono text-amber-300">
                 <Crown size={9} /> Pro
               </span>
             )}
@@ -497,7 +497,7 @@ const InteractivePreviewModal = ({ template, onClose, onGet }) => {
         </div>
 
         {/* Anti-download overlay message */}
-        <div className="absolute bottom-20 left-1/2 z-30 -translate-x-1/2 rounded-full border border-amber-500/20 bg-amber-500/10 px-4 py-2 backdrop-blur">
+        <div className="absolute bottom-20 left-1/2 z-30 -translate-x-1/2 rounded-full border border-amber-500/20 bg-accent/10 px-4 py-2 backdrop-blur">
           <div className="flex items-center gap-2 text-xs text-amber-300">
             <Lock size={12} />
             <span>Purchase or sign in to download</span>
@@ -625,8 +625,8 @@ const PurchaseModal = ({
       ) : success ? (
         <>
           <div className="text-center">
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-emerald-500/20 bg-emerald-500/10">
-              <Download size={24} className="text-emerald-400" />
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-emerald-500/20 bg-accent/10">
+              <Download size={24} className="text-accent" />
             </div>
             <h3 className="mt-4 text-xl font-black text-white">
               {template.isFree ? "Template Unlocked!" : "Purchase Complete!"}

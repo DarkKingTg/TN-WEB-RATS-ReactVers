@@ -154,7 +154,7 @@ export const getOrderPriorityBadgeClass = (order) =>
   order?.isPriority ||
   normalizeValue(order?.priorityLabel) === "high" ||
   normalizeValue(order?.priority) === "high"
-    ? "border-amber-400/20 bg-amber-400/10 text-amber-300"
+    ? "border-accent/20 bg-accent/10 text-accent"
     : "border-white/10 bg-white/5 text-white/55";
 
 export const getCustomerTypeLabel = (order, fallback = "new") => {

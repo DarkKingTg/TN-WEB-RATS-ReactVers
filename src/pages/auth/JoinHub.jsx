@@ -136,7 +136,7 @@ function PasswordStrength({ value }) {
     <div className="mt-2 space-y-1">
       <div className="flex justify-between text-[10px] font-mono uppercase tracking-wider text-light-gray/40">
         <span>Password strength</span>
-        <span className={score < 2 ? "text-amber-400" : "text-emerald-400"}>
+        <span className={score < 2 ? "text-accent" : "text-accent"}>
           {labels[score]}
         </span>
       </div>

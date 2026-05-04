@@ -11,16 +11,16 @@ const RoleBasedDashboard = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#262B25] flex items-center justify-center">
-        <div className="text-cyan-primary text-sm font-mono animate-pulse">Loading dashboard...</div>
-      </div>
+    <div className="min-h-screen bg-control-hover flex items-center justify-center">
+      <div className="text-cyan-primary text-sm font-mono animate-pulse">Loading dashboard...</div>
+    </div>
     );
   }
 
   const role = normalizeRole(userProfile?.role);
 
   const dashboardFallback = (
-    <div className="min-h-screen bg-[#262B25] flex items-center justify-center">
+    <div className="min-h-screen bg-[#2F5E22] flex items-center justify-center">
       <div className="text-cyan-primary text-sm font-mono animate-pulse">Loading dashboard...</div>
     </div>
   );

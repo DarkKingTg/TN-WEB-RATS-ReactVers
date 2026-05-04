@@ -120,7 +120,7 @@ const ReferralsView = () => {
   const getRoleColor = (role) => {
     switch(role) {
       case 'owner': return 'text-red-500 bg-red-500/10 border-red-500/20';
-      case 'admin': return 'text-blue-500 bg-blue-500/10 border-blue-500/20';
+      case 'admin': return 'text-secondary-dark bg-secondary-dark/10 border-blue-500/20';
       case 'worker': return 'text-cyan-primary bg-cyan-primary/10 border-cyan-primary/20';
       default: return 'text-white/40 bg-white/5 border-white/10';
     }
@@ -145,7 +145,7 @@ const ReferralsView = () => {
             </button>
           )}
           
-          <div className="hidden lg:flex bg-[#121417] border border-white/5 px-6 py-3 rounded-2xl items-center gap-6 divide-x divide-white/5 shadow-xl">
+          <div className="hidden lg:flex bg-[#1B241A] border border-white/5 px-6 py-3 rounded-2xl items-center gap-6 divide-x divide-white/5 shadow-xl">
              <div className="flex items-center gap-3">
                 <div className="text-xl font-black text-cyan-primary font-mono">{codes.length}</div>
                 <div className="text-[8px] font-mono uppercase tracking-[0.2em] text-white/20">Active<br/>Tokens</div>
@@ -160,7 +160,7 @@ const ReferralsView = () => {
 
       {/* Manual Creation Form */}
       {showCreate && (
-        <div className="bg-[#121417] border border-cyan-primary/20 rounded-3xl p-8 shadow-2xl animate-in slide-in-from-top-4 duration-300">
+        <div className="bg-[#1B241A] border border-cyan-primary/20 rounded-3xl p-8 shadow-2xl animate-in slide-in-from-top-4 duration-300">
           <div className="flex items-center gap-3 mb-6">
             <ShieldCheck className="text-cyan-primary" size={20} />
             <h3 className="text-sm font-black text-white uppercase tracking-widest">Manual Token Deployment</h3>
@@ -222,7 +222,7 @@ const ReferralsView = () => {
         </div>
       )}
 
-      <div className="bg-[#121417] border border-white/5 rounded-3xl overflow-hidden">
+      <div className="bg-[#1B241A] border border-white/5 rounded-3xl overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left">
             <thead className="bg-white/2 border-b border-white/5 text-[10px] font-mono uppercase tracking-widest text-white/30">
@@ -282,7 +282,7 @@ const ReferralsView = () => {
       
       {/* Legend / Info */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-         <div className="p-6 bg-[#121417]/50 border border-white/5 rounded-2xl flex items-start gap-4">
+         <div className="p-6 bg-[#1B241A]/50 border border-white/5 rounded-2xl flex items-start gap-4">
             <div className="w-10 h-10 rounded-xl bg-cyan-primary/5 border border-cyan-primary/20 flex items-center justify-center text-cyan-primary shrink-0">
                <HelpCircle size={20} />
             </div>

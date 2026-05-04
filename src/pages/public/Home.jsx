@@ -50,19 +50,19 @@ const Home = () => {
           <div className="flex flex-col items-center">
             <ScrollReveal direction="up" delay={0.1}>
               <h1 className="max-w-4xl text-5xl font-black leading-[1.05] text-white md:text-7xl text-center">
-                We{" "}<GradientText className="inline-block">Build</GradientText>. We{" "}<GradientText className="inline-block">Design</GradientText>. We{" "}
-                <GradientText className="inline-block">Deliver.</GradientText>
+                we{" "}<GradientText className="inline-block">build</GradientText>, we{" "}<GradientText className="inline-block">design</GradientText>, we{" "}
+                <GradientText className="inline-block">deliver.</GradientText>
               </h1>
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={0.2}>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-light-gray/74 md:text-xl text-center">
-               We Build. We Design. We Deliver.
-               Crafted by two dedicated builders,
-               we transform ideas into refined digital
-               experiences — from high-performing websites
-               to polished presentations and visual assets,
-               all delivered with precision and speed.
+                we build, we design, we deliver.
+                Crafted by two dedicated builders,
+                we transform ideas into refined digital
+                experiences — from high-performing websites
+                to polished presentations and visual assets,
+                all delivered with precision and speed.
               </p>
             </ScrollReveal>
 
@@ -87,7 +87,7 @@ const Home = () => {
           <ScrollReveal direction="scale" duration={0.6}>
             <p className="text-2xl font-black italic leading-snug text-white md:text-4xl">
               "Two minds. One mission.{" "}
-              <GlowText color="cyan">Infinite creativity.</GlowText>"
+              <GlowText color="accent">Infinite creativity.</GlowText>"
             </p>
           </ScrollReveal>
         </div>

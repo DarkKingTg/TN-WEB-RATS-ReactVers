@@ -7,7 +7,7 @@ const Footer = () => {
   const { user } = useAuth();
 
   return (
-    <footer className="relative z-10 mt-auto border-t border-cyan-primary/10 bg-[#121417]/95 pb-8 pt-16 backdrop-blur-md">
+    <footer className="relative z-10 mt-auto border-t border-cyan-primary/10 bg-[#1B241A]/95 pb-8 pt-16 backdrop-blur-md">
       <div className="container mx-auto px-6">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr_1fr]">
           <div>

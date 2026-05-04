@@ -30,7 +30,7 @@ export default function Index() {
   return (
     <MarketplaceLayout filters={filters} setFilters={setFilters}>
       <div className="space-y-8">
-        <section className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.18),transparent_35%),linear-gradient(180deg,rgba(18,20,23,0.98),rgba(13,15,13,0.98))] p-8 shadow-[0_40px_90px_rgba(0,0,0,0.32)]">
+        <section className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(var(--rgb-accent),0.18),transparent_35%),linear-gradient(180deg,rgba(var(--rgb-primary-dark),0.98),rgba(var(--rgb-control-default),0.98))] p-8 shadow-[0_40px_90px_rgba(0,0,0,0.32)]">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-primary/20 bg-cyan-primary/10 px-4 py-1.5 text-[10px] font-mono uppercase tracking-[0.22em] text-cyan-primary">
               <Sparkles size={12} />
@@ -83,7 +83,7 @@ export default function Index() {
         )}
 
         {!loading && !error && templates.length === 0 && (
-          <div className="rounded-[2rem] border border-white/8 bg-[#121417] px-8 py-16 text-center">
+          <div className="rounded-[2rem] border border-white/8 bg-control-default px-8 py-16 text-center">
             <div className="text-2xl font-black text-white">No templates matched</div>
             <p className="mt-3 text-sm text-white/48">
               Try a broader keyword or remove one of the filters from the sidebar.

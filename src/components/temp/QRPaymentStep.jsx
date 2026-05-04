@@ -83,14 +83,14 @@ const QRPaymentStep = ({
                     onClick={handleCopy}
                     className="text-cyan-primary transition-transform active:scale-90"
                   >
-                    {copied ? <CheckCircle2 size={14} className="text-emerald-400" /> : <Copy size={14} />}
+                    {copied ? <CheckCircle2 size={14} className="text-accent" /> : <Copy size={14} />}
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className="flex items-start gap-3 rounded-xl border border-amber-500/10 bg-amber-500/5 p-4 text-left text-[11px] leading-relaxed text-amber-200/60">
-              <Info size={14} className="mt-0.5 shrink-0 text-amber-400" />
+            <div className="flex items-start gap-3 rounded-xl border border-amber-500/10 bg-accent/5 p-4 text-left text-[11px] leading-relaxed text-amber-200/60">
+              <Info size={14} className="mt-0.5 shrink-0 text-accent" />
               <p>
                 Please ensure you pay the <strong className="text-amber-300 underline">exact amount</strong>. 
                 Keep the Transaction/UTR number ready after payment.

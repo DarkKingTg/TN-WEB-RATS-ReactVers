@@ -43,8 +43,8 @@ const LoginModal = ({ isOpen, onClose, onLogin, onSignup, isLoggedIn = false, me
       <div className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md z-50">
         <div className="bg-surface border border-white/10 rounded-2xl p-6 shadow-2xl m-4">
           {/* Icon */}
-          <div className="mx-auto w-16 h-16 bg-amber-500/20 rounded-full flex items-center justify-center mb-4">
-            <svg className="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="mx-auto w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+            <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
           </div>
@@ -63,7 +63,7 @@ const LoginModal = ({ isOpen, onClose, onLogin, onSignup, isLoggedIn = false, me
           <div className="space-y-3">
             <button
               onClick={handleLogin}
-              className="w-full py-3 px-4 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-xl transition-colors"
+              className="w-full py-3 px-4 bg-secondary-dark hover:bg-control-active text-white font-medium rounded-xl transition-colors"
             >
               {isLoggedIn ? "Go to Profile" : "Log In"}
             </button>

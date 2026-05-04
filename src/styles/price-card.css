@@ -26,9 +26,9 @@
   font-family: monospace;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  background-color: rgba(103, 248, 29, 0.1);
-  border: 1px solid rgba(103, 248, 29, 0.2);
-  color: #67f81d;
+  background-color: rgba(155, 255, 87, 0.1);
+  border: 1px solid rgba(155, 255, 87, 0.2);
+  color: #9BFF57;
   text-transform: uppercase;
   letter-spacing: -0.025em;
 }
@@ -45,7 +45,7 @@
 .price-card-price {
   font-size: 3rem;
   font-weight: 900;
-  color: #67f81d;
+  color: #9BFF57;
   margin-bottom: 1.5rem;
 }
 

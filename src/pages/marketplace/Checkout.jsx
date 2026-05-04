@@ -96,12 +96,12 @@ export default function Checkout() {
   };
 
   if (loading) {
-    return <div className="min-h-screen bg-[#0D0F0D]" />;
+    return <div className="min-h-screen bg-primary-dark" />;
   }
 
   if (!template) {
     return (
-      <section className="flex min-h-screen items-center justify-center bg-[#0D0F0D] px-6 text-center text-white">
+      <section className="flex min-h-screen items-center justify-center bg-primary-dark px-6 text-center text-white">
         <div>
           <h1 className="text-3xl font-black">Template not found</h1>
           <BackButton
@@ -115,7 +115,7 @@ export default function Checkout() {
   }
 
   return (
-    <section className="min-h-screen bg-[#0D0F0D] px-6 py-10 text-white lg:px-10">
+    <section className="min-h-screen bg-primary-dark px-6 py-10 text-white lg:px-10">
       <div className="mx-auto max-w-5xl">
         <BackButton
           to={`/template/${template.id}`}
@@ -123,7 +123,7 @@ export default function Checkout() {
         />
 
         <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
-          <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-[#121417]">
+          <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-control-default">
             <img
               src={template.images?.[0] || "/Images/Project_Preview/Project_Preview_1.png"}
               alt={template.title}
@@ -131,7 +131,7 @@ export default function Checkout() {
             />
           </div>
 
-          <aside className="rounded-[2.5rem] border border-white/8 bg-[#121417] p-8 shadow-[0_30px_80px_rgba(0,0,0,0.3)]">
+          <aside className="rounded-[2.5rem] border border-white/8 bg-control-default p-8 shadow-[0_30px_80px_rgba(0,0,0,0.3)]">
             <div className="text-[10px] font-mono uppercase tracking-[0.22em] text-cyan-primary/72">
               Checkout
             </div>

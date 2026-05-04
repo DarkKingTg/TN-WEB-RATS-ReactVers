@@ -16,7 +16,7 @@ const WizardProgress = ({ steps, currentStep }) => {
             
             {/* Dot */}
             <div className={`w-9 h-9 rounded-full border-2 flex items-center justify-center font-mono text-xs relative z-10 transition-all duration-500 ${
-              isActive ? 'border-cyan-primary bg-cyan-primary/10 text-cyan-primary shadow-[0_0_15px_rgba(103, 248, 29,0.3)]' :
+              isActive ? 'border-cyan-primary bg-cyan-primary/10 text-cyan-primary shadow-[0_0_15px_rgba(155, 255, 87,0.3)]' :
               isDone ? 'border-teal-primary bg-teal-primary/10 text-teal-primary' :
               'border-white/10 bg-secondary-dark text-white/20'
             }`}>

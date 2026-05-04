@@ -60,12 +60,12 @@ export default function TemplateDetail() {
   };
 
   if (loading) {
-    return <div className="min-h-screen bg-[#0D0F0D]" />;
+    return <div className="min-h-screen bg-[#0B120C]" />;
   }
 
   if (!template) {
     return (
-      <section className="flex min-h-screen items-center justify-center bg-[#0D0F0D] px-6 text-center text-white">
+      <section className="flex min-h-screen items-center justify-center bg-[#0B120C] px-6 text-center text-white">
         <div>
           <h1 className="text-3xl font-black">Template not found</h1>
           <BackButton
@@ -85,7 +85,7 @@ export default function TemplateDetail() {
   const canDownload = template.isUnlocked || template.isFree;
 
   return (
-    <section className="min-h-screen bg-[#0D0F0D] px-6 py-10 text-white lg:px-10">
+    <section className="min-h-screen bg-[#0B120C] px-6 py-10 text-white lg:px-10">
       <div className="mx-auto max-w-7xl">
         <BackButton
           to="/templates"
@@ -94,7 +94,7 @@ export default function TemplateDetail() {
 
         <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1.2fr)_420px]">
           <div className="space-y-4">
-            <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-[#121417]">
+            <div className="overflow-hidden rounded-[2.5rem] border border-white/8 bg-[#1B241A]">
               <img
                 src={selectedImage}
                 alt={template.title}
@@ -125,7 +125,7 @@ export default function TemplateDetail() {
             )}
           </div>
 
-          <aside className="h-fit rounded-[2.5rem] border border-white/8 bg-[#121417] p-8 shadow-[0_30px_80px_rgba(0,0,0,0.3)]">
+          <aside className="h-fit rounded-[2.5rem] border border-white/8 bg-[#1B241A] p-8 shadow-[0_30px_80px_rgba(0,0,0,0.3)]">
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-[10px] font-mono uppercase tracking-[0.18em] text-white/50">
                 {template.category || "template"}
@@ -192,7 +192,7 @@ export default function TemplateDetail() {
                   <button
                     type="button"
                     onClick={() => navigate(`/checkout/${template.id}`)}
-                    className="flex items-center justify-center gap-2 rounded-[1.35rem] border border-cyan-primary/22 bg-gradient-to-r from-cyan-primary to-teal-primary px-5 py-4 text-sm font-black uppercase tracking-[0.14em] text-primary-dark shadow-[0_18px_36px_rgba(103,248,29,0.14)] transition hover:-translate-y-0.5 hover:shadow-[0_24px_46px_rgba(103,248,29,0.2)]"
+                    className="flex items-center justify-center gap-2 rounded-[1.35rem] border border-cyan-primary/22 bg-gradient-to-r from-cyan-primary to-teal-primary px-5 py-4 text-sm font-black uppercase tracking-[0.14em] text-primary-dark shadow-[0_18px_36px_rgba(155,255,87,0.14)] transition hover:-translate-y-0.5 hover:shadow-[0_24px_46px_rgba(155,255,87,0.2)]"
                   >
                     <ShoppingCart size={18} />
                     Buy Now
